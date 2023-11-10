@@ -1,6 +1,6 @@
 matches:
   # Print the current date
-  - trigger: ":date"
+  - trigger: ";date"
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -9,7 +9,7 @@ matches:
           format: "%d/%m/%Y"
 
 # get my ipv4
-  - trigger: ":ip"
+  - trigger: ";ip"
     replace: "{{output}}"
     vars:
       - name: output
@@ -18,7 +18,7 @@ matches:
           cmd: "curl 'https://api.ipify.org'"
             
 # local ip
-  - trigger: ":localip"
+  - trigger: ";localip"
     replace: "{{output}}"
     vars:
       - name: output
@@ -26,14 +26,23 @@ matches:
         params:
           cmd: "ip a | grep 'inet 192' | awk '{ print $2 }'"
 
-  - trigger: ":sig"
-    replace: "Best, Lewis"
+  - trigger: ";sig"
+    replace: "Best,\nLewis"
   
-  - trigger: ":sig"
-    replace: "All the best, Lewis"
+  - trigger: ";sig"
+    replace: "All the best,\nLewis"
+      
+  - trigger: ";sig"
+    replace: "Kind regards,\nLewis"
+      
+  - trigger: ";sig"
+    replace: "Best wishes,\nLewis"
+      
+  - trigger: ";sig"
+    replace: "Regards,\nLewis"
       
 # get my now playing song from my website
-  - trigger: ":song"
+  - trigger: ";song"
     replace: "{{output}}"
     vars:
       - name: output
@@ -42,3 +51,18 @@ matches:
           args:
             - python
             - "%CONFIG%/scripts/now-playing.py"
+              
+  - trigger: ";email"
+    replace: "lewisblackburn10@gmail.com"
+
+  - trigger: ";address"
+    replace: "8 St Anne's St, Ryhill"
+
+  #time in 0H:0M notation
+  - trigger: ";now"
+    replace: "{{time}}"
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%H:%M"

@@ -65,4 +65,4 @@ matches:
       - name: time
         type: date
         params:
-          format: "%H:%M"
+          format: "%H:%M:%S"

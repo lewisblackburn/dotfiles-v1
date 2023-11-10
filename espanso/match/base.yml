@@ -66,3 +66,12 @@ matches:
         type: date
         params:
           format: "%H:%M:%S"
+            
+  # journal entry
+  - trigger: ";entry"
+    replace: "{{time}}"
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "## %H:%M:%S\n"

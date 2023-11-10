@@ -68,10 +68,17 @@ matches:
           format: "%H:%M:%S"
             
   # journal entry
-  - trigger: ";entry"
+  - trigger: ";;"
     replace: "{{time}}"
     vars:
       - name: time
         type: date
         params:
           format: "## %H:%M:%S\n"
+
+  # reference for obsidian (instead of the plugin I made)
+  - trigger: ";ref"
+    replace: "[(reference)]({{clipboard}})"
+    vars:
+      - name: clipboard
+        type: clipboard

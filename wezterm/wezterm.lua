@@ -16,7 +16,7 @@ end
 -- For example, changing the color scheme:
 config.color_scheme = 'Poimandres'
 -- font
-config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
+config.font = wezterm.font('JetBrains Mono', { weight = 'Medium' })
 config.font_size = 15
 config.line_height = 1.8
 config.window_background_opacity = 0.98

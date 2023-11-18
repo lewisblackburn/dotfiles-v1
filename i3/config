@@ -55,7 +55,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -201,7 +201,7 @@ gaps inner 10
 gaps outer 10
 
 # Assign workspaces
-assign [class="terminal"] 1
+assign [class="kitty"] 1
 assign [class="spotify"] 4
 assign [class="discord"] 4
 assign [class="firefox"] 2

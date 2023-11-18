@@ -6,7 +6,7 @@ NOTE: Use `git diff` to see what I need to push :)
 - rofi
 - polybar
 - playerctl
-- wezterm
+- kitty
 - lazygit
 - i3
 - fish

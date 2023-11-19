@@ -2,6 +2,8 @@
 
 Welcome to my dotfiles repository! These configuration files help me maintain a consistent environment across different systems. Feel free to explore and use anything you find useful.
 
+![screenshot-one](./screenshot-one.png)
+
 ## Installation
 
 Make sure to have the following tools installed before proceeding:

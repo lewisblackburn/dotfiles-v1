@@ -34,18 +34,18 @@ My dotfiles are organized using a simple approach. I use a .gitignore file to ig
 git add (file/folder) -f
 ```
 
-Note (to self): Be cautious with nested Git repositories, such as the one for astronvim. I have had to put this in a separate git repo. Use `git diff` to review changes before pushing.
+**Note (to self)**: Be cautious with nested Git repositories, such as the one for astronvim. I have had to put this in a separate git repo. Use `git diff` to review changes before pushing.
 
 ## Configuration Highlights
 
-Rofi: Custom configuration for the Rofi application launcher.
-Polybar: Configurations for the polybar status bar.
-Playerctl: Setup for controlling multimedia players from the command line.
-Kitty: Configuration for the kitty terminal emulator.
-Lazygit: Customizations for the lazygit Git client.
-i3: Window manager configurations.
-Fish: Shell configurations for the Fish shell.
-Espanso: Configuration for the espanso text expander.
-Starship: Custom prompt configuration for the Starship shell prompt.
-Neovim/Astronvim: Vim configurations with the astronvim plugin.
-Nerd Font: Use a nerd font like JetBrainsMono for enhanced typography.
+- **Rofi**: Custom configuration for the Rofi application launcher.
+- **Polybar**: Configurations for the polybar status bar.
+- **Playerctl**: Setup for controlling multimedia players from the command line.
+- **Kitty**: Configuration for the kitty terminal emulator.
+- **Lazygit**: Customizations for the lazygit Git client.
+- **i3**: Window manager configurations.
+- **Fish**: Shell configurations for the Fish shell.
+- **Espanso**: Configuration for the espanso text expander.
+- **Starship**: Custom prompt configuration for the Starship shell prompt.
+- **Neovim**/Astronvim: Vim configurations with the astronvim plugin.
+- **Nerd Font**: Use a nerd font like JetBrainsMono for enhanced typography.

@@ -36,7 +36,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Start polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh 
+# exec_always --no-startup-id ~/.config/polybar/launch.sh 
 
 # Picom
 # exec --no-startup-id picom
@@ -201,6 +201,12 @@ bindsym $mod+r mode "resize"
 # bar {
 #         status_command i3status
 # }
+bar {
+        status_command SCRIPT_DIR=~/.config/i3blocks i3blocks
+        position top
+        tray_padding 4
+	font pango:JetBrainsMono Nerd Font Medium 10  
+}
 
 # Gaps
 # gaps inner 10

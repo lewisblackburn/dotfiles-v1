@@ -49,3 +49,7 @@ git add (file/folder) -f
 - **Starship**: Custom prompt configuration for the Starship shell prompt.
 - **Neovim**/Astronvim: Vim configurations with the astronvim plugin.
 - **Nerd Font**: Use a nerd font like JetBrainsMono for enhanced typography.
+
+## Note
+
+There is a lot of bloat in this repo. I am really just messing around with i3. I'm liking it so far, however, I can see myself endlessly configuring this instead of donig something productive.

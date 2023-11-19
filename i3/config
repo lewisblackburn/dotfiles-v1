@@ -210,6 +210,7 @@ assign [class="kitty"] 1
 assign [class="Spotify"] 4
 assign [class="discord"] 5
 assign [class="firefox"] 2
+assign [class="obsidian"] 6
 
 # Focus on window activation
 focus_on_window_activation focus

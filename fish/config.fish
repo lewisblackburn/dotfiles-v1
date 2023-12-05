@@ -6,8 +6,6 @@ end
 
 starship init fish | source
 
-set -x PATH /home/lewisblackburn/.cargo/bin $PATH
-
 # aliases
 alias vim='nvim'
 alias vi='nvim'

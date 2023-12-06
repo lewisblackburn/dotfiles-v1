@@ -17,6 +17,9 @@ matches:
   - trigger: ";gitgrep"
     replace: "git rev-list --all | xargs git grep"
     word: true
+  - trigger: ";gcm"
+    replace: 'git commit -m "$|$"'
+    word: true
   - trigger: ";sso"
     replace: "site:stackoverflow.com"
     word: true

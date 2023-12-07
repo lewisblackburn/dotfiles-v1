@@ -28,7 +28,6 @@ matches:
           format: "## %H:%M:%S\n"
   - trigger: ";all"
     replace: "https://www.twitch.tv/adamlearnslive"
-    word: true
   # email signatures 
   - trigger: ";sig"
     replace: "Best,\nLewis"

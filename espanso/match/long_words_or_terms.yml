@@ -763,3 +763,7 @@ matches:
     replace: "I don't know"
     word: true
     propagate_case: true
+  - trigger: 'atm'
+    replace: 'at the moment'
+    word: true
+    propagate_case: true

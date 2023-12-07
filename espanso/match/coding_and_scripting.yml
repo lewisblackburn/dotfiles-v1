@@ -19,7 +19,6 @@ matches:
     word: true
   - trigger: ";gcm"
     replace: 'git commit -m "$|$"'
-    word: true
   - trigger: ";sso"
     replace: "site:stackoverflow.com"
     word: true

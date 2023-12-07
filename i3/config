@@ -225,3 +225,4 @@ for_window [urgent=latest] focus
 
 # Window border
 for_window [class="^.*"] border pixel 0
+

@@ -179,22 +179,6 @@ matches:
     replace: "primary key"
     word: true
     propagate_case: true
-  - trigger: ";doc"
-    replace: "documentation"
-    word: true
-    propagate_case: true
-  - trigger: ";docs"
-    replace: "documentation"
-    word: true
-    propagate_case: true
-  - trigger: "convo"
-    replace: "conversation"
-    word: true
-    propagate_case: true
-  - trigger: "convos"
-    replace: "conversations"
-    word: true
-    propagate_case: true
   - trigger: ";ai"
     replace: "&Action item -"
     word: true
@@ -607,12 +591,8 @@ matches:
     replace: "out-of-date"
     word: true
     propagate_case: true
-  - triggers: ["prio", ";prio"]
+  - trigger: "prio"
     replace: "priority"
-    word: true
-    propagate_case: true
-  - triggers: [";prios", "prios"]
-    replace: "priorities"
     word: true
     propagate_case: true
   - trigger: ";perf"
@@ -711,48 +691,12 @@ matches:
     replace: "algorithms"
     word: true
     propagate_case: true
-  - triggers: ["prioz", "prioize"]
-    replace: "prioritize"
-    word: true
-    propagate_case: true
-  - trigger: "priozing"
-    replace: "prioritizing"
-    word: true
-    propagate_case: true
-  - trigger: "priozn"
-    replace: "prioritization"
-    word: true
-    propagate_case: true
-  - trigger: ";idk"
-    replace: "I don;t know"
-    word: true
-    propagate_case: true
   - trigger: ";wai"
     replace: "working as intended"
     word: true
     propagate_case: true
-  - trigger: "prereqs"
-    replace: "prerequisites"
-    word: true
-    propagate_case: true
-  - trigger: "prereq"
-    replace: "prerequisite"
-    word: true
-    propagate_case: true
   - trigger: ";hcl"
     replace: "HashiCorp configuration langauge"
-    word: true
-    propagate_case: true
-  - trigger: ";pref"
-    replace: "preference"
-    word: true
-    propagate_case: true
-  - trigger: ";prefs"
-    replace: "preferences"
-    word: true
-    propagate_case: true
-  - trigger: "prefs"
-    replace: "preferences"
     word: true
     propagate_case: true
   - trigger: ";fio"
@@ -765,5 +709,57 @@ matches:
     propagate_case: true
   - trigger: ";wip"
     replace: "work in progress"
+    word: true
+    propagate_case: true
+  - trigger: "pref"
+    replace: "preference"
+    word: true
+    propagate_case: true
+  - trigger: "prefs"
+    replace: "preferences"
+    word: true
+    propagate_case: true
+  - trigger: "doc"
+    replace: "documentation"
+    word: true
+    propagate_case: true
+  - trigger: "docs"
+    replace: "documentation"
+    word: true
+    propagate_case: true
+  - trigger: "convo"
+    replace: "conversation"
+    word: true
+    propagate_case: true
+  - trigger: "convos"
+    replace: "conversations"
+    word: true
+    propagate_case: true
+  - trigger: "prereqs"
+    replace: "prerequisites"
+    word: true
+    propagate_case: true
+  - trigger: "prereq"
+    replace: "prerequisite"
+    word: true
+    propagate_case: true
+  - trigger: "prios"
+    replace: "priorities"
+    word: true
+    propagate_case: true
+  - triggers: ["prios", "prioise"]
+    replace: "prioritise"
+    word: true
+    propagate_case: true
+  - trigger: "priosing"
+    replace: "prioritising"
+    word: true
+    propagate_case: true
+  - trigger: "priosn"
+    replace: "prioritisation"
+    word: true
+    propagate_case: true
+  - trigger: "idk"
+    replace: "I don't know"
     word: true
     propagate_case: true

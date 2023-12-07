@@ -511,10 +511,6 @@ matches:
     replace: "configuration"
     word: true
     propagate_case: true
-  - trigger: ";atm"
-    replace: "at the moment"
-    word: true
-    propagate_case: true
   - trigger: ";cred"
     replace: "credential"
     word: true

@@ -1,47 +1,11 @@
 matches:
-  # Print the current date
-  - trigger: ";date"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%d/%m/%Y"
-
-# get my ipv4
   - trigger: ";ip"
     replace: "{{output}}"
     vars:
       - name: output
         type: shell
         params:
-          cmd: "curl 'https://api.ipify.org'"
-            
-# local ip
-  - trigger: ";localip"
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: shell
-        params:
-          cmd: "ip a | grep 'inet 192' | awk '{ print $2 }'"
-
-  - trigger: ";sig"
-    replace: "Best,\nLewis"
-  
-  - trigger: ";sig"
-    replace: "All the best,\nLewis"
-      
-  - trigger: ";sig"
-    replace: "Kind regards,\nLewis"
-      
-  - trigger: ";sig"
-    replace: "Best wishes,\nLewis"
-      
-  - trigger: ";sig"
-    replace: "Regards,\nLewis"
-      
-# get my now playing song from my website
+          cmd: "ip a | grep 'inet 192' | awk '{ print $2 }' | cut -d '/' -f 1"
   - trigger: ";song"
     replace: "{{output}}"
     vars:
@@ -51,23 +15,10 @@ matches:
           args:
             - python
             - "%CONFIG%/scripts/now-playing.py"
-              
   - trigger: ";email"
     replace: "lewisblackburn10@gmail.com"
-
   - trigger: ";address"
     replace: "8 St Anne's St, Ryhill"
-
-  #time in 0H:0M notation
-  - trigger: ";now"
-    replace: "{{time}}"
-    vars:
-      - name: time
-        type: date
-        params:
-          format: "%H:%M:%S"
-            
-  # journal entry
   - trigger: ";;"
     replace: "{{time}}"
     vars:
@@ -75,10 +26,17 @@ matches:
         type: date
         params:
           format: "## %H:%M:%S\n"
-
-  # reference for obsidian (instead of the plugin I made)
-  - trigger: ";ref"
-    replace: "[(reference)]({{clipboard}})"
-    vars:
-      - name: clipboard
-        type: clipboard
+  - trigger: ";all"
+    replace: "https://www.twitch.tv/adamlearnslive"
+    word: true
+  # email signatures 
+  - trigger: ";sig"
+    replace: "Best,\nLewis"
+  - trigger: ";sig"
+    replace: "All the best,\nLewis"
+  - trigger: ";sig"
+    replace: "Kind regards,\nLewis"
+  - trigger: ";sig"
+    replace: "Best wishes,\nLewis"
+  - trigger: ";sig"
+    replace: "Regards,\nLewis"

@@ -213,7 +213,7 @@ bar {
 # gaps outer 10
 
 # Assign workspaces
-assign [class="kitty"] 1
+# assign [class="kitty"] 1
 assign [class="Spotify"] 4
 assign [class="discord"] 5
 assign [class="firefox"] 2

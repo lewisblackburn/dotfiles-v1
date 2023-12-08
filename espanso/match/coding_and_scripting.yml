@@ -49,3 +49,5 @@ matches:
     vars:
       - name: "clipboard"
         type: "clipboard"
+  - trigger: ';cp'
+    replace: 'xclip -selection clipboard <'

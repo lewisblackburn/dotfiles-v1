@@ -7,8 +7,9 @@ matches:
     replace: "👍"
     word: true
     propagate_case: true
-  - triggers: [";heart", ";<3"]
-    replace: "❤️"
+    # In this case I prefer <3 over ♥️
+  - trigger: ";heart"
+    replace: "<3"
     word: true
     propagate_case: true
   - triggers: [";monkas", ";flush"]

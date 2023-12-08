@@ -51,3 +51,4 @@ matches:
         type: "clipboard"
   - trigger: ';cp'
     replace: 'xclip -selection clipboard <'
+       

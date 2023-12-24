@@ -39,3 +39,16 @@ matches:
     replace: "Türkiye"
     word: true
     propagate_case: true
+# Swedish character shortcuts
+  - trigger: "ae"
+    replace: "ä"
+    propagate_case: true
+  - trigger: "oe"
+    replace: "ö"
+    propagate_case: true
+  - trigger: "aa"
+    replace: "å"
+    propagate_case: true
+  - trigger: "`e"
+    replace: "é"
+    propagate_case: true

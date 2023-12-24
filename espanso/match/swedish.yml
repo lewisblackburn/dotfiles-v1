@@ -1,8 +1,0 @@
-# swedish character shortcuts
-matches:
-  - trigger: "a:"
-    replace: "ä"
-    propagate_case: true
-  - trigger: "o:"
-    replace: "ö"
-    propagate_case: true

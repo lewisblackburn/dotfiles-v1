@@ -11,6 +11,7 @@ starship init fish | source
 # aliases
 alias vim='nvim'
 alias vi='nvim'
+alias docker-delete-all="docker rmi -f $(docker images -aq)"
 
 # functions
 function cd..

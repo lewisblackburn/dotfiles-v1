@@ -1,7 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/lewisblackburn/.config
+- /home/lewisblackburn/dev/projects/petal
+- /home/lewisblackburn/dev/projects/website
 - /home/lewisblackburn/dev/leetcode
+- /home/lewisblackburn/.config
 - /home/lewisblackburn/dev/projects/commit
 startuppopupversion: 5
 customcommandshistory:

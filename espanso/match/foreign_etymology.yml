@@ -15,6 +15,10 @@ matches:
     replace: "naïve"
     word: true
     propagate_case: true
+  - trigger: "cafe"
+    replace: "café"
+    word: true
+    propagate_case: true
   - triggers: [";e/", ";/e"]
     replace: "é"
     word: true
@@ -40,15 +44,15 @@ matches:
     word: true
     propagate_case: true
 # Swedish character shortcuts
-  - trigger: ":ae"
+  - trigger: ";ae"
     replace: "ä"
     propagate_case: true
-  - trigger: ":oe"
+  - trigger: ";oe"
     replace: "ö"
     propagate_case: true
-  - trigger: ":aa"
+  - trigger: ";aa"
     replace: "å"
     propagate_case: true
-  - trigger: ":`e"
+  - trigger: ";`e"
     replace: "é"
     propagate_case: true

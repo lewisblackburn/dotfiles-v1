@@ -763,3 +763,6 @@ matches:
     replace: 'at the moment'
     word: true
     propagate_case: true
+  - trigger: 'ai'
+    replace: 'AI'
+    word: true

@@ -39,3 +39,5 @@ matches:
     replace: "Best wishes,\nLewis"
   - trigger: ";sig"
     replace: "Regards,\nLewis"
+  - trigger: "your shit bike"
+    replace: "川崎"
